@@ -1,0 +1,32 @@
+{
+  "name": "gsarault44githubio",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery-bridget": "~1.1.0",
+    "angular": "~1.3.0",
+    "json3": "~3.3.1",
+    "es5-shim": "~3.1.0",
+    "bootstrap-sass-official": "~3.2.0",
+    "angular-resource": "~1.3.0",
+    "angular-cookies": "~1.3.0",
+    "angular-sanitize": "~1.3.0",
+    "angular-animate": "~1.3.0",
+    "angular-touch": "~1.3.0",
+    "angular-route": "~1.3.0",
+    "ng-week": "FavishInc/angular-week",
+    "angular-ui-router": "~0.2.11",
+    "angular-swipe": "~0.0.6",
+    "angular-masonry": "~0.11.0",
+    "angular-messages": "~1.3.6",
+    "angular-wysiwyg": "~1.1.4",
+    "fontawesome": "~4.3.0",
+    "gsap": "greensock#^1.18.4"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.0"
+  },
+  "appPath": "app",
+  "resolutions": {
+    "angular": "~1.3.6"
+  }
+}

@@ -1,0 +1,34 @@
+* {
+    font-family:$f-primary;
+}
+
+body {
+  padding: 0;
+  margin:0;
+}
+
+.page {
+    overflow: hidden;
+    width:100%;
+    position: absolute;
+}
+/* Custom page header */
+.header {
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+/* Custom page footer */
+.footer {
+    padding: 200px 0;
+    color: #777;
+}
+.row {
+    padding:44px 0;
+}
+.wrapper {
+    max-width: 960px;
+    margin:0 auto;
+}
