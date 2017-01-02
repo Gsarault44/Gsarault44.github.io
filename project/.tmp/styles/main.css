@@ -82,12 +82,13 @@ body {
 /* line 33, ../../app/styles/modules/_intro.scss */
 .intro-page .intro .intro-image {
   display: table-cell;
+  background: url(/images/greg.png) no-repeat center center;
+  margin: 20px auto;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
 }
-/* line 35, ../../app/styles/modules/_intro.scss */
-.intro-page .intro .intro-image img {
-  max-width: 250px;
-}
-/* line 39, ../../app/styles/modules/_intro.scss */
+/* line 41, ../../app/styles/modules/_intro.scss */
 .intro-page .intro .intro-text {
   max-width: 75%;
   padding: 0 10%;
@@ -98,7 +99,7 @@ body {
   font-size: 26px;
 }
 
-/* line 50, ../../app/styles/modules/_intro.scss */
+/* line 52, ../../app/styles/modules/_intro.scss */
 .spotlight {
   position: absolute;
   width: 100%;
@@ -107,12 +108,12 @@ body {
   box-shadow: 0px 15px 41px 5px #000;
   padding-top: 40px;
 }
-/* line 57, ../../app/styles/modules/_intro.scss */
+/* line 59, ../../app/styles/modules/_intro.scss */
 .spotlight .spotlight-intro {
   text-align: left;
   margin: 50px auto;
 }
-/* line 60, ../../app/styles/modules/_intro.scss */
+/* line 62, ../../app/styles/modules/_intro.scss */
 .spotlight .spotlight-intro h1 {
   font-style: italic;
   font-size: 42px;
@@ -120,13 +121,13 @@ body {
   border-left: 6px solid #ccc;
   padding-left: 20px;
 }
-/* line 67, ../../app/styles/modules/_intro.scss */
+/* line 69, ../../app/styles/modules/_intro.scss */
 .spotlight .spotlight-intro p {
   font-style: italic;
   font-size: 22px;
   font-family: "Lato", sans-serif;
 }
-/* line 73, ../../app/styles/modules/_intro.scss */
+/* line 75, ../../app/styles/modules/_intro.scss */
 .spotlight .spot {
   width: 33%;
   float: left;
@@ -135,28 +136,28 @@ body {
   box-sizing: border-box;
   overflow: hidden;
 }
-/* line 80, ../../app/styles/modules/_intro.scss */
+/* line 82, ../../app/styles/modules/_intro.scss */
 .spotlight .spot .spot-wrap {
   position: relative;
   height: 300px;
   width: 100%;
 }
-/* line 84, ../../app/styles/modules/_intro.scss */
+/* line 86, ../../app/styles/modules/_intro.scss */
 .spotlight .spot .spot-wrap.longwood {
   background: url(/images/longwood-logo.png) no-repeat center center;
   background-size: contain;
 }
-/* line 88, ../../app/styles/modules/_intro.scss */
+/* line 90, ../../app/styles/modules/_intro.scss */
 .spotlight .spot .spot-wrap.ford {
   background: url(/images/ford-logo.png) no-repeat center center;
   background-size: contain;
 }
-/* line 92, ../../app/styles/modules/_intro.scss */
+/* line 94, ../../app/styles/modules/_intro.scss */
 .spotlight .spot .spot-wrap.gates {
   background: url(/images/gates-logo.png) no-repeat center center;
   background-size: contain;
 }
-/* line 97, ../../app/styles/modules/_intro.scss */
+/* line 99, ../../app/styles/modules/_intro.scss */
 .spotlight .spot h2 {
   position: absolute;
   margin: 0;
@@ -168,13 +169,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 108, ../../app/styles/modules/_intro.scss */
+/* line 110, ../../app/styles/modules/_intro.scss */
 .spotlight .spot img {
   width: 100%;
   object-fit: cover;
 }
 
-/* line 114, ../../app/styles/modules/_intro.scss */
+/* line 116, ../../app/styles/modules/_intro.scss */
 .project-index {
   position: absolute;
   width: 100%;
@@ -182,37 +183,37 @@ body {
   background: #fff;
   box-shadow: 0px 15px 41px 5px #000;
 }
-/* line 120, ../../app/styles/modules/_intro.scss */
+/* line 122, ../../app/styles/modules/_intro.scss */
 .project-index .project-intro {
   text-align: left;
   margin: 50px auto;
   border-left: 6px solid #ccc;
   padding-left: 20px;
 }
-/* line 125, ../../app/styles/modules/_intro.scss */
+/* line 127, ../../app/styles/modules/_intro.scss */
 .project-index .project-intro h1 {
   font-style: italic;
   font-size: 42px;
   margin: 0 auto;
 }
-/* line 130, ../../app/styles/modules/_intro.scss */
+/* line 132, ../../app/styles/modules/_intro.scss */
 .project-index .project-intro p {
   font-style: italic;
   font-size: 26px;
   font-family: "Lato", sans-serif;
 }
-/* line 136, ../../app/styles/modules/_intro.scss */
+/* line 138, ../../app/styles/modules/_intro.scss */
 .project-index .p-list {
   overflow-y: scroll;
   height: 6000px;
 }
-/* line 139, ../../app/styles/modules/_intro.scss */
+/* line 141, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul {
   list-style-type: none;
   padding: 20px 0;
   margin: 0;
 }
-/* line 143, ../../app/styles/modules/_intro.scss */
+/* line 145, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul li {
   width: 100%;
   height: 50px;
@@ -222,21 +223,21 @@ body {
   margin-bottom: 10px;
   position: relative;
 }
-/* line 151, ../../app/styles/modules/_intro.scss */
+/* line 153, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul li h1 {
   display: inline-block;
   font-size: 18px;
   text-transform: uppercase;
   margin: 0 10px;
 }
-/* line 157, ../../app/styles/modules/_intro.scss */
+/* line 159, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul li .date {
   position: absolute;
   left: 0;
   font-size: 32px;
   color: rgba(204, 204, 204, 0.5);
 }
-/* line 164, ../../app/styles/modules/_intro.scss */
+/* line 166, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul li p {
   float: right;
   text-align: right;
