@@ -8,5 +8,5 @@
  * Controller of the gsarault44githubioApp
  */
 angular.module('gsarault44githubioApp').controller('AboutCtrl', function () {
-    
+
 });

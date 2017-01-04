@@ -97,10 +97,9 @@ angular.module('gsarault44githubioApp').controller('MainCtrl', function ($scope,
 				TweenMax.to($('.projects'), 1, {scaleZ:0.95,ease:Expo.easeOut});
 				TweenMax.to($('.spotlight .heading'), 2, {autoAlpha:1,ease:Expo.easeOut});
 				TweenMax.to($('.project-index'), 1, {top:'100px',ease:Expo.easeOut});
-				
+			console.log('Just to see if Real Deveploers are looking, I Like Fart jokes!')	
 			}
       	}
-
 
     scrolling()
 
