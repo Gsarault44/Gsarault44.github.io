@@ -37,6 +37,7 @@ body {
 
 /* line 31, ../../app/styles/modules/_main.scss */
 .wrapper {
+  width: 95%;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -53,224 +54,367 @@ body {
 .heading h1 {
   margin: 0;
   color: #000;
-  font-size: 28px;
+  font-size: 20px;
   font-style: italic;
   line-height: 1.4;
   letter-spacing: 1px;
 }
+@media only screen and (min-width: 640px) {
+  /* line 7, ../../app/styles/modules/_intro.scss */
+  .heading h1 {
+    font-size: 28px;
+  }
+}
 
-/* line 16, ../../app/styles/modules/_intro.scss */
+/* line 19, ../../app/styles/modules/_intro.scss */
 .next {
   position: absolute;
   bottom: 60px;
   left: 50%;
   transform: translate(-50%);
 }
-/* line 21, ../../app/styles/modules/_intro.scss */
+/* line 24, ../../app/styles/modules/_intro.scss */
 .next:before {
   content: "";
   display: inline-block;
   width: 30px;
   height: 30px;
-  border-right: 6px solid rgba(0, 0, 0, 0.75);
-  border-top: 6px solid rgba(0, 0, 0, 0.75);
-  box-shadow: 2px -2px 0px 0px rgba(0, 0, 0, 0.75);
+  border-right: 3px solid rgba(0, 0, 0, 0.75);
+  border-top: 3px solid rgba(0, 0, 0, 0.75);
   transform: rotate(135deg);
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   transition: bottom 0.35s ease-out;
 }
-/* line 35, ../../app/styles/modules/_intro.scss */
+@media only screen and (min-width: 640px) {
+  /* line 24, ../../app/styles/modules/_intro.scss */
+  .next:before {
+    border-right: 6px solid rgba(0, 0, 0, 0.75);
+    border-top: 6px solid rgba(0, 0, 0, 0.75);
+  }
+}
+/* line 41, ../../app/styles/modules/_intro.scss */
 .next:hover:before {
   bottom: 55px;
 }
 
-/* line 41, ../../app/styles/modules/_intro.scss */
+/* line 47, ../../app/styles/modules/_intro.scss */
 .intro-page {
   position: relative;
 }
-/* line 44, ../../app/styles/modules/_intro.scss */
+/* line 50, ../../app/styles/modules/_intro.scss */
 .intro-page .logo .intro-logo-image {
-  margin: 20px auto 60px;
+  width: 90%;
+  max-width: 400px;
+  margin: 10px auto 20px;
   display: block;
 }
-/* line 49, ../../app/styles/modules/_intro.scss */
+@media only screen and (min-width: 1200px) {
+  /* line 50, ../../app/styles/modules/_intro.scss */
+  .intro-page .logo .intro-logo-image {
+    margin: 20px auto 60px;
+  }
+}
+/* line 60, ../../app/styles/modules/_intro.scss */
 .intro-page .intro {
   background: #fff;
   box-shadow: 0px 15px 41px 5px #000;
   border-bottom: 1px solid green;
   padding-bottom: 0;
 }
-/* line 54, ../../app/styles/modules/_intro.scss */
+/* line 65, ../../app/styles/modules/_intro.scss */
 .intro-page .intro .wrapper {
   display: table;
 }
-/* line 57, ../../app/styles/modules/_intro.scss */
+/* line 68, ../../app/styles/modules/_intro.scss */
 .intro-page .intro .intro-image {
+  position: absolute;
   display: table-cell;
   background: url(/images/greg.png) no-repeat center center;
   margin: 20px auto;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
   background-size: cover;
 }
-/* line 65, ../../app/styles/modules/_intro.scss */
+@media only screen and (min-width: 640px) {
+  /* line 68, ../../app/styles/modules/_intro.scss */
+  .intro-page .intro .intro-image {
+    width: 300px;
+    height: 300px;
+    position: static;
+    opacity: 1;
+  }
+}
+/* line 84, ../../app/styles/modules/_intro.scss */
 .intro-page .intro .intro-text {
+  position: relative;
+  z-index: 2;
   max-width: 75%;
   padding: 0 10%;
   display: table-cell;
   vertical-align: middle;
   font-family: "Lato", sans-serif;
   font-style: italic;
-  font-size: 26px;
+  font-size: 16px;
+}
+@media only screen and (min-width: 900px) {
+  /* line 84, ../../app/styles/modules/_intro.scss */
+  .intro-page .intro .intro-text {
+    font-size: 26px;
+  }
 }
 
-/* line 76, ../../app/styles/modules/_intro.scss */
+/* line 100, ../../app/styles/modules/_intro.scss */
 .spotlight {
   position: absolute;
   width: 100%;
   top: 0;
   background: #fff;
   box-shadow: 0px 15px 41px 5px #000;
-  padding-top: 40px;
+  padding-top: 20px;
 }
-/* line 83, ../../app/styles/modules/_intro.scss */
+@media only screen and (min-width: 640px) {
+  /* line 100, ../../app/styles/modules/_intro.scss */
+  .spotlight {
+    padding-top: 40px;
+  }
+}
+/* line 110, ../../app/styles/modules/_intro.scss */
 .spotlight .next {
   bottom: 155px;
 }
-/* line 86, ../../app/styles/modules/_intro.scss */
+/* line 113, ../../app/styles/modules/_intro.scss */
 .spotlight .spotlight-intro {
   text-align: left;
-  margin: 50px auto;
+  margin: 15px auto;
 }
-/* line 89, ../../app/styles/modules/_intro.scss */
+@media only screen and (min-width: 640px) {
+  /* line 113, ../../app/styles/modules/_intro.scss */
+  .spotlight .spotlight-intro {
+    margin: 50px auto;
+  }
+}
+/* line 119, ../../app/styles/modules/_intro.scss */
 .spotlight .spotlight-intro h1 {
   font-style: italic;
-  font-size: 42px;
+  font-size: 22px;
   margin: 0 auto;
   border-left: 6px solid #ccc;
   padding-left: 20px;
 }
-/* line 96, ../../app/styles/modules/_intro.scss */
+@media only screen and (min-width: 640px) {
+  /* line 119, ../../app/styles/modules/_intro.scss */
+  .spotlight .spotlight-intro h1 {
+    font-size: 42px;
+  }
+}
+/* line 129, ../../app/styles/modules/_intro.scss */
 .spotlight .spotlight-intro p {
   font-style: italic;
-  font-size: 22px;
+  font-size: 16px;
   font-family: "Lato", sans-serif;
 }
-/* line 102, ../../app/styles/modules/_intro.scss */
+@media only screen and (min-width: 640px) {
+  /* line 129, ../../app/styles/modules/_intro.scss */
+  .spotlight .spotlight-intro p {
+    font-size: 22px;
+  }
+}
+/* line 138, ../../app/styles/modules/_intro.scss */
 .spotlight .spot {
-  width: 33%;
-  float: left;
+  width: 75%;
+  display: block;
   position: relative;
-  padding: 40px 10px 0;
+  padding: 10px 10px 0;
   box-sizing: border-box;
   overflow: hidden;
+  margin: 0 auto;
 }
-/* line 109, ../../app/styles/modules/_intro.scss */
+@media only screen and (min-width: 640px) {
+  /* line 138, ../../app/styles/modules/_intro.scss */
+  .spotlight .spot {
+    padding: 40px 10px 0;
+    display: inline-block;
+    width: 32%;
+  }
+}
+/* line 151, ../../app/styles/modules/_intro.scss */
 .spotlight .spot .spot-wrap {
   position: relative;
-  height: 300px;
   width: 100%;
+  height: 100px;
 }
-/* line 113, ../../app/styles/modules/_intro.scss */
+@media only screen and (min-width: 640px) {
+  /* line 151, ../../app/styles/modules/_intro.scss */
+  .spotlight .spot .spot-wrap {
+    height: 300px;
+  }
+}
+/* line 158, ../../app/styles/modules/_intro.scss */
 .spotlight .spot .spot-wrap.longwood {
   background: url(/images/longwood-logo.png) no-repeat center center;
   background-size: contain;
 }
-/* line 117, ../../app/styles/modules/_intro.scss */
+/* line 162, ../../app/styles/modules/_intro.scss */
 .spotlight .spot .spot-wrap.ford {
   background: url(/images/ford-logo.png) no-repeat center center;
   background-size: contain;
 }
-/* line 121, ../../app/styles/modules/_intro.scss */
+/* line 166, ../../app/styles/modules/_intro.scss */
 .spotlight .spot .spot-wrap.gates {
   background: url(/images/gates-logo.png) no-repeat center center;
   background-size: contain;
 }
-/* line 126, ../../app/styles/modules/_intro.scss */
+/* line 171, ../../app/styles/modules/_intro.scss */
 .spotlight .spot h2 {
   position: absolute;
   margin: 0;
   text-align: center;
   color: #000;
-  font-size: 32px;
+  font-size: 22px;
   width: 90%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 137, ../../app/styles/modules/_intro.scss */
+@media only screen and (min-width: 640px) {
+  /* line 171, ../../app/styles/modules/_intro.scss */
+  .spotlight .spot h2 {
+    font-size: 32px;
+  }
+}
+/* line 185, ../../app/styles/modules/_intro.scss */
 .spotlight .spot img {
   width: 100%;
   object-fit: cover;
 }
 
-/* line 143, ../../app/styles/modules/_intro.scss */
+/* line 191, ../../app/styles/modules/_intro.scss */
 .project-index {
   position: absolute;
   width: 100%;
   top: 0;
   background: #fff;
   box-shadow: 0px 15px 41px 5px #000;
+  padding-top: 10px;
 }
-/* line 149, ../../app/styles/modules/_intro.scss */
+/* line 200, ../../app/styles/modules/_intro.scss */
 .project-index .project-intro {
   text-align: left;
-  margin: 50px auto;
+  margin: 15px auto;
   border-left: 6px solid #ccc;
   padding-left: 20px;
 }
-/* line 154, ../../app/styles/modules/_intro.scss */
+@media only screen and (min-width: 640px) {
+  /* line 200, ../../app/styles/modules/_intro.scss */
+  .project-index .project-intro {
+    margin: 50px auto;
+  }
+}
+/* line 208, ../../app/styles/modules/_intro.scss */
 .project-index .project-intro h1 {
   font-style: italic;
-  font-size: 42px;
+  font-size: 22px;
   margin: 0 auto;
 }
-/* line 159, ../../app/styles/modules/_intro.scss */
+@media only screen and (min-width: 640px) {
+  /* line 208, ../../app/styles/modules/_intro.scss */
+  .project-index .project-intro h1 {
+    font-size: 42px;
+  }
+}
+/* line 216, ../../app/styles/modules/_intro.scss */
 .project-index .project-intro p {
   font-style: italic;
-  font-size: 26px;
+  font-size: 16px;
   font-family: "Lato", sans-serif;
 }
-/* line 165, ../../app/styles/modules/_intro.scss */
+@media only screen and (min-width: 640px) {
+  /* line 216, ../../app/styles/modules/_intro.scss */
+  .project-index .project-intro p {
+    font-size: 26px;
+  }
+}
+/* line 225, ../../app/styles/modules/_intro.scss */
 .project-index .p-list {
   overflow-y: scroll;
   height: 6000px;
 }
-/* line 168, ../../app/styles/modules/_intro.scss */
+/* line 228, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul {
   list-style-type: none;
-  padding: 20px 0;
+  padding: 40px 0 40px;
   margin: 0;
 }
-/* line 172, ../../app/styles/modules/_intro.scss */
+/* line 232, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul li {
-  width: 100%;
-  height: 50px;
+  width: calc(100% - 10px);
+  height: 95px;
   padding: 0px;
-  margin: 0;
+  margin: 0 auto;
   border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
   position: relative;
 }
-/* line 180, ../../app/styles/modules/_intro.scss */
+@media only screen and (min-width: 640px) {
+  /* line 232, ../../app/styles/modules/_intro.scss */
+  .project-index .p-list ul li {
+    height: 50px;
+    width: calc(100% - 150px);
+  }
+}
+/* line 244, ../../app/styles/modules/_intro.scss */
+.project-index .p-list ul li #first {
+  padding-top: 20px;
+}
+/* line 247, ../../app/styles/modules/_intro.scss */
+.project-index .p-list ul li a {
+  color: #000;
+  text-decoration: none;
+}
+/* line 251, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul li h1 {
   display: inline-block;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
-  margin: 0 10px;
+  margin: 0 0 5px;
 }
-/* line 186, ../../app/styles/modules/_intro.scss */
+@media only screen and (min-width: 640px) {
+  /* line 251, ../../app/styles/modules/_intro.scss */
+  .project-index .p-list ul li h1 {
+    margin: 0 10px;
+    font-size: 18px;
+  }
+}
+/* line 261, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul li .date {
-  position: absolute;
-  left: 0;
-  font-size: 32px;
-  color: rgba(204, 204, 204, 0.5);
+  font-size: 18px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.4);
+  vertical-align: top;
+  margin-bottom: 5px;
+  display: block;
 }
-/* line 193, ../../app/styles/modules/_intro.scss */
+@media only screen and (min-width: 640px) {
+  /* line 261, ../../app/styles/modules/_intro.scss */
+  .project-index .p-list ul li .date {
+    position: absolute;
+    left: -50px;
+    font-size: 32px;
+    left: -75px;
+  }
+}
+/* line 275, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul li p {
-  float: right;
-  text-align: right;
+  margin: 0;
+}
+@media only screen and (min-width: 640px) {
+  /* line 275, ../../app/styles/modules/_intro.scss */
+  .project-index .p-list ul li p {
+    text-align: right;
+    float: right;
+  }
 }
 
 /* line 3, ../../app/styles/modules/_about.scss */

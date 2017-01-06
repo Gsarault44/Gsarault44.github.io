@@ -13,12 +13,27 @@ angular.module('gsarault44githubioApp').controller('MainCtrl', function ($scope,
 	var screenWidth = $( window ).width();
 	var listOffTop = screenHeight-300
 	var move = 0
+	var width = $(document).width();
+	var littleOffTheTop = '50px'
+	var someOffTheTop = '100px'
+
+	if (width < 640) {
+       	listOffTop = screenHeight-145
+		littleOffTheTop = '35px'
+		someOffTheTop = '70px'
+    }
+	$(window).resize(function() {
+	    
+	    if (width < 640) {
+	       listOffTop = screenHeight-145
+	    }
+	});
+
 	TweenMax.set($('.page'), {height:screenHeight});
 	TweenMax.set($('.intro'), {height:screenHeight});
 	TweenMax.set($('.spotlight'), {top:'100%', height:screenHeight});
 	TweenMax.set($('.project-index'), {top:'100%', height:screenHeight});
 	TweenMax.set($('.p-list'), {height:listOffTop+'px'});
-	
 
     function scrolling() {
     	
@@ -30,7 +45,7 @@ angular.module('gsarault44githubioApp').controller('MainCtrl', function ($scope,
     		console.log(move)
     		var $elm = $(event.target);
     			if($elm.is('.p-list *')) { 
-		        	var subScrollParent = $('.p-list').offset().top + 20
+		        	var subScrollParent = $('.p-list').offset().top + 40
 	    			var subScroll = $('#first').offset().top
 	    			if(subScrollParent != subScroll){
 			    		return
@@ -51,7 +66,7 @@ angular.module('gsarault44githubioApp').controller('MainCtrl', function ($scope,
 	    		if (move > 25 && move < 75) { 
 					TweenMax.to($('.intro'), 1, {scaleZ:0.975,ease:Expo.easeOut});
 					TweenMax.to($('.intro .heading'), 2, {autoAlpha:1,ease:Expo.easeOut});
-					TweenMax.to($('.spotlight'), 1, {top:'50px',ease:Expo.easeOut});
+					TweenMax.to($('.spotlight'), 1, {top:littleOffTheTop,ease:Expo.easeOut});
 					TweenMax.to($('.spotlight .heading'), 2, {autoAlpha:0,ease:Expo.easeOut});
 					TweenMax.to($('.project-index'), 1, {top:'100%',ease:Expo.easeOut});
 				}
@@ -59,7 +74,7 @@ angular.module('gsarault44githubioApp').controller('MainCtrl', function ($scope,
 					var setSubScroll = $('.p-list').offset().top
 					TweenMax.to($('.projects'), 1, {scaleZ:0.95,ease:Expo.easeOut});
 					TweenMax.to($('.spotlight .heading'), 2, {autoAlpha:1,ease:Expo.easeOut});
-					TweenMax.to($('.project-index'), 1, {top:'100px',ease:Expo.easeOut});
+					TweenMax.to($('.project-index'), 1, {top:someOffTheTop,ease:Expo.easeOut});
 				}
 				if (move < 25) {
 					TweenMax.to($('.intro'), 1, {scale:1,ease:Expo.easeOut});
@@ -85,7 +100,7 @@ angular.module('gsarault44githubioApp').controller('MainCtrl', function ($scope,
 				move = 26
 				TweenMax.to($('.intro'), 1, {scaleZ:0.975,ease:Expo.easeOut});
 				TweenMax.to($('.intro .heading'), 2, {autoAlpha:1,ease:Expo.easeOut});
-				TweenMax.to($('.spotlight'), 1, {top:'50px',ease:Expo.easeOut});
+				TweenMax.to($('.spotlight'), 1, {top:littleOffTheTop,ease:Expo.easeOut});
 				TweenMax.to($('.spotlight .heading'), 2, {autoAlpha:0,ease:Expo.easeOut});
 				TweenMax.to($('.project-index'), 1, {top:'100%',ease:Expo.easeOut});
 				console.log('spotlight')
@@ -96,7 +111,7 @@ angular.module('gsarault44githubioApp').controller('MainCtrl', function ($scope,
 				console.log('index')
 				TweenMax.to($('.projects'), 1, {scaleZ:0.95,ease:Expo.easeOut});
 				TweenMax.to($('.spotlight .heading'), 2, {autoAlpha:1,ease:Expo.easeOut});
-				TweenMax.to($('.project-index'), 1, {top:'100px',ease:Expo.easeOut});
+				TweenMax.to($('.project-index'), 1, {top:someOffTheTop,ease:Expo.easeOut});
 			console.log('Just to see if Real Deveploers are looking, I Like Fart jokes!')	
 			}
       	}
