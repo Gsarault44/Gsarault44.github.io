@@ -1,0 +1,35 @@
+.resume {
+	background:rgba(#ccc, 0.5); width:100%; 
+* { margin: 0 0; padding: 0 0; }
+h1,h2,h3,h4,h5,h6 { margin:0 0 1em;}
+body { font-size:100%; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+p, ul, ol { margin: 0 0 1em; font-size: 1em; display: block; }
+ul,ol { list-style: none; margin:0 0 1em;}
+a { text-decoration: none; color:#589b00;}
+a:hover { color:green; border-bottom:1px solid green;}
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.page-wrap {  margin:0 auto; max-width:760px; padding:1em; }
+.the-man { text-align: left; display: block; border-bottom: 1px solid #000; padding-bottom: 3em; margin: 0 0 2em; }
+.slogan { margin: 0 0 1em;}
+.title { font-size: 3em; margin-bottom: 0; }
+.stree-address, .locality { display: inline-block; }
+.email { display: block; }
+.section-heading { font-size: 2em; background:transparent; display:block; margin-bottom:1em; }
+.company { margin:0; display:inline-block; font-size: 1.5em; }
+.intro { margin:0; }
+.personal-info {
+	.website {
+		display: block;
+	}
+}
+.project-list, .all-my-skills { 
+	li { 
+		float:left; width:50%; 
+		padding-right: 20px;
+		box-sizing:border-box;
+	}
+}
+.project-list-sites { display: block; padding: 0.5em 0; }
+.all-my-skills-content, .position-abilities-content { margin-bottom: 0.25em; }
+.tech-skills, .skills, .projects, .exerience, .education { margin-bottom: 2em; border-bottom: 1px solid #000; padding-bottom: 1em; }
+}

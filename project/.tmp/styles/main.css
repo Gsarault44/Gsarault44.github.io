@@ -423,3 +423,126 @@ body {
   width: 50%;
   margin: 0 auto 20px;
 }
+
+/* line 1, ../../app/styles/modules/_resume.scss */
+.resume {
+  background: rgba(204, 204, 204, 0.5);
+  width: 100%;
+}
+/* line 3, ../../app/styles/modules/_resume.scss */
+.resume * {
+  margin: 0 0;
+  padding: 0 0;
+}
+/* line 4, ../../app/styles/modules/_resume.scss */
+.resume h1, .resume h2, .resume h3, .resume h4, .resume h5, .resume h6 {
+  margin: 0 0 1em;
+}
+/* line 5, ../../app/styles/modules/_resume.scss */
+.resume body {
+  font-size: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 6, ../../app/styles/modules/_resume.scss */
+.resume p, .resume ul, .resume ol {
+  margin: 0 0 1em;
+  font-size: 1em;
+  display: block;
+}
+/* line 7, ../../app/styles/modules/_resume.scss */
+.resume ul, .resume ol {
+  list-style: none;
+  margin: 0 0 1em;
+}
+/* line 8, ../../app/styles/modules/_resume.scss */
+.resume a {
+  text-decoration: none;
+  color: #589b00;
+}
+/* line 9, ../../app/styles/modules/_resume.scss */
+.resume a:hover {
+  color: green;
+  border-bottom: 1px solid green;
+}
+/* line 10, ../../app/styles/modules/_resume.scss */
+.resume .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 11, ../../app/styles/modules/_resume.scss */
+.resume .page-wrap {
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 1em;
+}
+/* line 12, ../../app/styles/modules/_resume.scss */
+.resume .the-man {
+  text-align: left;
+  display: block;
+  border-bottom: 1px solid #000;
+  padding-bottom: 3em;
+  margin: 0 0 2em;
+}
+/* line 13, ../../app/styles/modules/_resume.scss */
+.resume .slogan {
+  margin: 0 0 1em;
+}
+/* line 14, ../../app/styles/modules/_resume.scss */
+.resume .title {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+/* line 15, ../../app/styles/modules/_resume.scss */
+.resume .stree-address, .resume .locality {
+  display: inline-block;
+}
+/* line 16, ../../app/styles/modules/_resume.scss */
+.resume .email {
+  display: block;
+}
+/* line 17, ../../app/styles/modules/_resume.scss */
+.resume .section-heading {
+  font-size: 2em;
+  background: transparent;
+  display: block;
+  margin-bottom: 1em;
+}
+/* line 18, ../../app/styles/modules/_resume.scss */
+.resume .company {
+  margin: 0;
+  display: inline-block;
+  font-size: 1.5em;
+}
+/* line 19, ../../app/styles/modules/_resume.scss */
+.resume .intro {
+  margin: 0;
+}
+/* line 21, ../../app/styles/modules/_resume.scss */
+.resume .personal-info .website {
+  display: block;
+}
+/* line 26, ../../app/styles/modules/_resume.scss */
+.resume .project-list li, .resume .all-my-skills li {
+  float: left;
+  width: 50%;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+/* line 32, ../../app/styles/modules/_resume.scss */
+.resume .project-list-sites {
+  display: block;
+  padding: 0.5em 0;
+}
+/* line 33, ../../app/styles/modules/_resume.scss */
+.resume .all-my-skills-content, .resume .position-abilities-content {
+  margin-bottom: 0.25em;
+}
+/* line 34, ../../app/styles/modules/_resume.scss */
+.resume .tech-skills, .resume .skills, .resume .projects, .resume .exerience, .resume .education {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1em;
+}
