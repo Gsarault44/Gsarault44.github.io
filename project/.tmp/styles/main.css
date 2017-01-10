@@ -517,30 +517,34 @@ body {
   font-size: 1.5em;
 }
 /* line 19, ../../app/styles/modules/_resume.scss */
+.resume .experence-subtitle {
+  font-weight: 600;
+}
+/* line 22, ../../app/styles/modules/_resume.scss */
 .resume .intro {
   margin: 0;
 }
-/* line 21, ../../app/styles/modules/_resume.scss */
+/* line 24, ../../app/styles/modules/_resume.scss */
 .resume .personal-info .website {
   display: block;
 }
-/* line 26, ../../app/styles/modules/_resume.scss */
+/* line 29, ../../app/styles/modules/_resume.scss */
 .resume .project-list li, .resume .all-my-skills li {
   float: left;
   width: 50%;
   padding-right: 20px;
   box-sizing: border-box;
 }
-/* line 32, ../../app/styles/modules/_resume.scss */
+/* line 35, ../../app/styles/modules/_resume.scss */
 .resume .project-list-sites {
   display: block;
   padding: 0.5em 0;
 }
-/* line 33, ../../app/styles/modules/_resume.scss */
+/* line 36, ../../app/styles/modules/_resume.scss */
 .resume .all-my-skills-content, .resume .position-abilities-content {
   margin-bottom: 0.25em;
 }
-/* line 34, ../../app/styles/modules/_resume.scss */
+/* line 37, ../../app/styles/modules/_resume.scss */
 .resume .tech-skills, .resume .skills, .resume .projects, .resume .exerience, .resume .education {
   margin-bottom: 2em;
   border-bottom: 1px solid #000;
