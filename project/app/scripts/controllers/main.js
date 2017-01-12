@@ -35,6 +35,17 @@ angular.module('gsarault44githubioApp').controller('MainCtrl', function ($scope,
 	TweenMax.set($('.project-index'), {top:'100%', height:screenHeight});
 	TweenMax.set($('.p-list'), {height:listOffTop+'px'});
 
+
+	$scope.openThisSucka = function(e) {
+  		
+  		var project = "."+e 
+  		TweenMax.to($('.p-spotlight'), 1, {autoAlpha:1,zIndex:1,ease:Expo.easeOut});
+  		TweenMax.to($(project), 1, {autoAlpha:1,zIndex:1,ease:Expo.easeOut});
+  	}
+  	$scope.closeThisSucka = function(e) {
+  		TweenMax.to($('.p-spotlight'), 1, {autoAlpha:0,zIndex:-1,ease:Expo.easeOut});
+  		TweenMax.to($('.spot-pop'), 1, {autoAlpha:0,zIndex:-1,ease:Expo.easeOut});
+  	}
     function scrolling() {
     	
     	console.log
@@ -42,8 +53,10 @@ angular.module('gsarault44githubioApp').controller('MainCtrl', function ($scope,
 		   
 		}, true);
     	$(document).on('mousewheel DOMMouseScroll MozMousePixelScroll', function(event, delta) {
-    		console.log(move)
     		var $elm = $(event.target);
+    			if($elm.is('.p-spotlight *')) { 
+			    	return
+		    	}
     			if($elm.is('.p-list *')) { 
 		        	var subScrollParent = $('.p-list').offset().top + 40
 	    			var subScroll = $('#first').offset().top
@@ -116,6 +129,7 @@ angular.module('gsarault44githubioApp').controller('MainCtrl', function ($scope,
 			}
       	}
 
+      	
     scrolling()
 
 });

@@ -30,17 +30,17 @@
             <p>Here are a few recent projects that I have worked on.</p>
         </div>
         <div class="spot">
-            <div class="spot-wrap longwood">
+            <div class="spot-wrap longwood" ng-click="openThisSucka('longwood')">
                 <!-- <h2>Longwood Gardens.</h2> -->
             </div>
         </div>
         <div class="spot">
-            <div class="spot-wrap ford">
+            <div class="spot-wrap ford" ng-click="openThisSucka('ford')">
                 <!-- <h2>Gerald Ford for Museum</h2> -->
             </div>
         </div>
         <div class="spot">
-            <div class="spot-wrap gates">
+            <div class="spot-wrap gates" ng-click="openThisSucka('gates')">
                 <!-- <h2>Bill and Milinda Gates Foundation.</h2> -->
             </div>
         </div>
@@ -133,7 +133,7 @@
                         <article class="p-item">
                             <a href="http://www.harukimurakami.com/">
                                 <h1>Haruki Murakami</h1>
-                                <p>Web, Angular</p>
+                                <p>Web, Angular, 2015 Webby Award Winner</p>
                             </a>
                         </article>
                     </li>
@@ -241,3 +241,28 @@
         </div>
   </section>
 </secion>
+<section class="p-spotlight">
+    <div class="closer" ng-click="closeThisSucka()"></div>
+    <div class="spot-pop longwood">
+        <h1>Longwood Gardens New Heights</h1>
+        <p>This was developed in Angular, populated the content via json feed, Slideshows, scrolling, and videos were all custom creations. This project was an Honerable Mention for Awwwards, and a SXSW – Finalist: Innovation Awards, Responsive Design (2016)</p>
+        <img src="images/longwood1.png">
+        <img src="images/longwood2.png">
+        <img src="images/longwood3.png">
+    </div>
+    <div class="spot-pop ford">
+        <h1>Gerald Ford Museum</h1>
+        <p>This Project was a tight timeline with only 5 months of development. We were able to prototype early on for to find out if we could accept multiple touches in chrome</p>
+        <img src="images/ford3.png">
+        <img src="images/ford1.jpg">
+        <img src="images/ford2.png">
+    </div>
+    <div class="spot-pop gates">
+        <h1>Bill and Melinda Gates Foundation.</h1>
+        <p>This was also a tight timeline almost in tandem with the Ford project. There are 3 different applications, a Photobooth, Display wall, and Portrait media station. We created a node server on the display wall to immediately display photos and other data from photo booth.</p>
+        <img src="images/gates3.png">
+        <img src="images/gates1.png">
+        <img src="images/gates2.png">
+        
+    </div>
+</section>  

@@ -1,6 +1,6 @@
 /* line 1, ../../app/styles/modules/_main.scss */
 * {
-  font-family: "Lato", sans-serif;
+  font-family: "Chivo", sans-serif;
 }
 
 /* line 5, ../../app/styles/modules/_main.scss */
@@ -40,6 +40,84 @@ body {
   width: 95%;
   max-width: 960px;
   margin: 0 auto;
+}
+
+/* line 36, ../../app/styles/modules/_main.scss */
+.closer {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+/* line 45, ../../app/styles/modules/_main.scss */
+.closer:hover::before, .closer:hover::after {
+  background: #000;
+}
+/* line 50, ../../app/styles/modules/_main.scss */
+.closer::before, .closer::after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  height: 4px;
+  border-radius: 3px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+}
+/* line 61, ../../app/styles/modules/_main.scss */
+.closer::before {
+  transform: rotate(45deg);
+}
+/* line 64, ../../app/styles/modules/_main.scss */
+.closer::after {
+  transform: rotate(-45deg);
+}
+
+/* line 68, ../../app/styles/modules/_main.scss */
+.p-spotlight {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  opacity: 0;
+  z-index: -1;
+}
+/* line 79, ../../app/styles/modules/_main.scss */
+.p-spotlight .spot-pop {
+  display: inline-block;
+  width: 50%;
+  padding: 0 20px;
+  position: absolute;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, 0);
+}
+/* line 87, ../../app/styles/modules/_main.scss */
+.p-spotlight .spot-pop h1 {
+  color: #fff;
+}
+/* line 90, ../../app/styles/modules/_main.scss */
+.p-spotlight .spot-pop p {
+  color: #fff;
+  margin-bottom: 40px;
+}
+/* line 94, ../../app/styles/modules/_main.scss */
+.p-spotlight .spot-pop img {
+  display: inline-block;
+  margin-bottom: 25px;
+  width: 100%;
+}
+/* line 100, ../../app/styles/modules/_main.scss */
+.p-spotlight .spot-pop.gates img {
+  display: inline-block;
 }
 
 /* line 1, ../../app/styles/modules/_intro.scss */
@@ -154,7 +232,7 @@ body {
   padding: 0 10%;
   display: table-cell;
   vertical-align: middle;
-  font-family: "Lato", sans-serif;
+  font-family: "Chivo", sans-serif;
   font-style: italic;
   font-size: 16px;
 }
@@ -213,7 +291,7 @@ body {
 .spotlight .spotlight-intro p {
   font-style: italic;
   font-size: 16px;
-  font-family: "Lato", sans-serif;
+  font-family: "Chivo", sans-serif;
 }
 @media only screen and (min-width: 640px) {
   /* line 129, ../../app/styles/modules/_intro.scss */
@@ -328,7 +406,7 @@ body {
 .project-index .project-intro p {
   font-style: italic;
   font-size: 16px;
-  font-family: "Lato", sans-serif;
+  font-family: "Chivo", sans-serif;
 }
 @media only screen and (min-width: 640px) {
   /* line 216, ../../app/styles/modules/_intro.scss */
@@ -415,13 +493,6 @@ body {
     text-align: right;
     float: right;
   }
-}
-
-/* line 3, ../../app/styles/modules/_about.scss */
-.p-spotlight .spot-wrap img {
-  display: block;
-  width: 50%;
-  margin: 0 auto 20px;
 }
 
 /* line 1, ../../app/styles/modules/_resume.scss */
