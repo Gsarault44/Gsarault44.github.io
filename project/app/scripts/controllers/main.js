@@ -44,6 +44,7 @@ angular.module('gsarault44githubioApp').controller('MainCtrl', function ($scope,
   	}
   	$scope.closeThisSucka = function(e) {
   		TweenMax.to($('.p-spotlight'), 1, {autoAlpha:0,zIndex:-1,ease:Expo.easeOut});
+  		TweenMax.to($('.spot-wrap'), 1, {zIndex:0,ease:Expo.easeOut});
   		TweenMax.to($('.spot-pop'), 1, {autoAlpha:0,zIndex:-1,ease:Expo.easeOut});
   	}
     function scrolling() {

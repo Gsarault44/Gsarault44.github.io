@@ -46,17 +46,24 @@ body {
 .closer {
   position: absolute;
   right: 5%;
-  top: 5%;
+  top: 2%;
   display: inline-block;
   width: 50px;
   height: 50px;
   overflow: hidden;
+  z-index: 3;
 }
-/* line 45, ../../app/styles/modules/_main.scss */
+@media only screen and (min-width: 640px) {
+  /* line 36, ../../app/styles/modules/_main.scss */
+  .closer {
+    top: 5%;
+  }
+}
+/* line 49, ../../app/styles/modules/_main.scss */
 .closer:hover::before, .closer:hover::after {
   background: #000;
 }
-/* line 50, ../../app/styles/modules/_main.scss */
+/* line 54, ../../app/styles/modules/_main.scss */
 .closer::before, .closer::after {
   content: '';
   position: absolute;
@@ -68,16 +75,16 @@ body {
   left: 0;
   margin-top: -1px;
 }
-/* line 61, ../../app/styles/modules/_main.scss */
+/* line 65, ../../app/styles/modules/_main.scss */
 .closer::before {
   transform: rotate(45deg);
 }
-/* line 64, ../../app/styles/modules/_main.scss */
+/* line 68, ../../app/styles/modules/_main.scss */
 .closer::after {
   transform: rotate(-45deg);
 }
 
-/* line 68, ../../app/styles/modules/_main.scss */
+/* line 72, ../../app/styles/modules/_main.scss */
 .p-spotlight {
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
@@ -90,32 +97,38 @@ body {
   opacity: 0;
   z-index: -1;
 }
-/* line 79, ../../app/styles/modules/_main.scss */
+/* line 83, ../../app/styles/modules/_main.scss */
 .p-spotlight .spot-pop {
   display: inline-block;
-  width: 50%;
+  width: 80%;
   padding: 0 20px;
   position: absolute;
   left: 50%;
   opacity: 0;
   transform: translate(-50%, 0);
 }
-/* line 87, ../../app/styles/modules/_main.scss */
+@media only screen and (min-width: 640px) {
+  /* line 83, ../../app/styles/modules/_main.scss */
+  .p-spotlight .spot-pop {
+    width: 50%;
+  }
+}
+/* line 94, ../../app/styles/modules/_main.scss */
 .p-spotlight .spot-pop h1 {
   color: #fff;
 }
-/* line 90, ../../app/styles/modules/_main.scss */
+/* line 97, ../../app/styles/modules/_main.scss */
 .p-spotlight .spot-pop p {
   color: #fff;
   margin-bottom: 40px;
 }
-/* line 94, ../../app/styles/modules/_main.scss */
+/* line 101, ../../app/styles/modules/_main.scss */
 .p-spotlight .spot-pop img {
   display: inline-block;
   margin-bottom: 25px;
   width: 100%;
 }
-/* line 100, ../../app/styles/modules/_main.scss */
+/* line 107, ../../app/styles/modules/_main.scss */
 .p-spotlight .spot-pop.gates img {
   display: inline-block;
 }
@@ -260,7 +273,7 @@ body {
 }
 /* line 110, ../../app/styles/modules/_intro.scss */
 .spotlight .next {
-  bottom: 155px;
+  bottom: 115px;
 }
 /* line 113, ../../app/styles/modules/_intro.scss */
 .spotlight .spotlight-intro {
@@ -270,7 +283,7 @@ body {
 @media only screen and (min-width: 640px) {
   /* line 113, ../../app/styles/modules/_intro.scss */
   .spotlight .spotlight-intro {
-    margin: 50px auto;
+    margin: 30px auto;
   }
 }
 /* line 119, ../../app/styles/modules/_intro.scss */
@@ -301,10 +314,10 @@ body {
 }
 /* line 138, ../../app/styles/modules/_intro.scss */
 .spotlight .spot {
-  width: 75%;
+  width: 70%;
   display: block;
   position: relative;
-  padding: 10px 10px 0;
+  padding: 10px 10px 10px;
   box-sizing: border-box;
   overflow: hidden;
   margin: 0 auto;
@@ -322,6 +335,7 @@ body {
   position: relative;
   width: 100%;
   height: 100px;
+  display: block;
 }
 @media only screen and (min-width: 640px) {
   /* line 151, ../../app/styles/modules/_intro.scss */
@@ -329,22 +343,22 @@ body {
     height: 300px;
   }
 }
-/* line 158, ../../app/styles/modules/_intro.scss */
+/* line 159, ../../app/styles/modules/_intro.scss */
 .spotlight .spot .spot-wrap.longwood {
   background: url(/images/longwood-logo.png) no-repeat center center;
   background-size: contain;
 }
-/* line 162, ../../app/styles/modules/_intro.scss */
+/* line 163, ../../app/styles/modules/_intro.scss */
 .spotlight .spot .spot-wrap.ford {
   background: url(/images/ford-logo.png) no-repeat center center;
   background-size: contain;
 }
-/* line 166, ../../app/styles/modules/_intro.scss */
+/* line 167, ../../app/styles/modules/_intro.scss */
 .spotlight .spot .spot-wrap.gates {
   background: url(/images/gates-logo.png) no-repeat center center;
   background-size: contain;
 }
-/* line 171, ../../app/styles/modules/_intro.scss */
+/* line 172, ../../app/styles/modules/_intro.scss */
 .spotlight .spot h2 {
   position: absolute;
   margin: 0;
@@ -357,18 +371,18 @@ body {
   transform: translate(-50%, -50%);
 }
 @media only screen and (min-width: 640px) {
-  /* line 171, ../../app/styles/modules/_intro.scss */
+  /* line 172, ../../app/styles/modules/_intro.scss */
   .spotlight .spot h2 {
     font-size: 32px;
   }
 }
-/* line 185, ../../app/styles/modules/_intro.scss */
+/* line 186, ../../app/styles/modules/_intro.scss */
 .spotlight .spot img {
   width: 100%;
   object-fit: cover;
 }
 
-/* line 191, ../../app/styles/modules/_intro.scss */
+/* line 192, ../../app/styles/modules/_intro.scss */
 .project-index {
   position: absolute;
   width: 100%;
@@ -377,7 +391,7 @@ body {
   box-shadow: 0px 15px 41px 5px #000;
   padding-top: 10px;
 }
-/* line 200, ../../app/styles/modules/_intro.scss */
+/* line 201, ../../app/styles/modules/_intro.scss */
 .project-index .project-intro {
   text-align: left;
   margin: 15px auto;
@@ -385,47 +399,47 @@ body {
   padding-left: 20px;
 }
 @media only screen and (min-width: 640px) {
-  /* line 200, ../../app/styles/modules/_intro.scss */
+  /* line 201, ../../app/styles/modules/_intro.scss */
   .project-index .project-intro {
     margin: 50px auto;
   }
 }
-/* line 208, ../../app/styles/modules/_intro.scss */
+/* line 209, ../../app/styles/modules/_intro.scss */
 .project-index .project-intro h1 {
   font-style: italic;
   font-size: 22px;
   margin: 0 auto;
 }
 @media only screen and (min-width: 640px) {
-  /* line 208, ../../app/styles/modules/_intro.scss */
+  /* line 209, ../../app/styles/modules/_intro.scss */
   .project-index .project-intro h1 {
     font-size: 42px;
   }
 }
-/* line 216, ../../app/styles/modules/_intro.scss */
+/* line 217, ../../app/styles/modules/_intro.scss */
 .project-index .project-intro p {
   font-style: italic;
   font-size: 16px;
   font-family: "Chivo", sans-serif;
 }
 @media only screen and (min-width: 640px) {
-  /* line 216, ../../app/styles/modules/_intro.scss */
+  /* line 217, ../../app/styles/modules/_intro.scss */
   .project-index .project-intro p {
     font-size: 26px;
   }
 }
-/* line 225, ../../app/styles/modules/_intro.scss */
+/* line 226, ../../app/styles/modules/_intro.scss */
 .project-index .p-list {
   overflow-y: scroll;
   height: 6000px;
 }
-/* line 228, ../../app/styles/modules/_intro.scss */
+/* line 229, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul {
   list-style-type: none;
   padding: 40px 0 40px;
   margin: 0;
 }
-/* line 232, ../../app/styles/modules/_intro.scss */
+/* line 233, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul li {
   width: calc(100% - 10px);
   height: 95px;
@@ -436,22 +450,22 @@ body {
   position: relative;
 }
 @media only screen and (min-width: 640px) {
-  /* line 232, ../../app/styles/modules/_intro.scss */
+  /* line 233, ../../app/styles/modules/_intro.scss */
   .project-index .p-list ul li {
     height: 50px;
     width: calc(100% - 150px);
   }
 }
-/* line 244, ../../app/styles/modules/_intro.scss */
+/* line 245, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul li #first {
   padding-top: 20px;
 }
-/* line 247, ../../app/styles/modules/_intro.scss */
+/* line 248, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul li a {
   color: #000;
   text-decoration: none;
 }
-/* line 251, ../../app/styles/modules/_intro.scss */
+/* line 252, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul li h1 {
   display: inline-block;
   font-size: 14px;
@@ -459,13 +473,13 @@ body {
   margin: 0 0 5px;
 }
 @media only screen and (min-width: 640px) {
-  /* line 251, ../../app/styles/modules/_intro.scss */
+  /* line 252, ../../app/styles/modules/_intro.scss */
   .project-index .p-list ul li h1 {
     margin: 0 10px;
     font-size: 18px;
   }
 }
-/* line 261, ../../app/styles/modules/_intro.scss */
+/* line 262, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul li .date {
   font-size: 18px;
   line-height: 1;
@@ -475,7 +489,7 @@ body {
   display: block;
 }
 @media only screen and (min-width: 640px) {
-  /* line 261, ../../app/styles/modules/_intro.scss */
+  /* line 262, ../../app/styles/modules/_intro.scss */
   .project-index .p-list ul li .date {
     position: absolute;
     left: -50px;
@@ -483,12 +497,12 @@ body {
     left: -75px;
   }
 }
-/* line 275, ../../app/styles/modules/_intro.scss */
+/* line 276, ../../app/styles/modules/_intro.scss */
 .project-index .p-list ul li p {
   margin: 0;
 }
 @media only screen and (min-width: 640px) {
-  /* line 275, ../../app/styles/modules/_intro.scss */
+  /* line 276, ../../app/styles/modules/_intro.scss */
   .project-index .p-list ul li p {
     text-align: right;
     float: right;
