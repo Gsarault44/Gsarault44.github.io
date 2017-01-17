@@ -58,6 +58,9 @@ angular.module('gsarault44githubioApp').controller('MainCtrl', function ($scope,
     			if($elm.is('.p-spotlight *')) { 
 			    	return
 		    	}
+		    	if($elm.is('.p-spotlight')) { 
+			    	return
+		    	}
     			if($elm.is('.p-list *')) { 
 		        	var subScrollParent = $('.p-list').offset().top + 40
 	    			var subScroll = $('#first').offset().top
